@@ -1,0 +1,38 @@
+.upload-container {
+    display: grid;
+    grid-template-areas:
+        "select upload upload upload upload";
+    gap: 2rem;
+    
+}
+
+@include tablet {
+    .upload-container {
+        grid-template-areas:
+        "select"
+        "upload";
+    }
+}
+.select-course {
+    grid-area: select;
+}
+
+.assignment-name{
+    margin-top: 2rem;
+}
+
+.upload-file {
+    grid-area: upload;
+    height: 40rem;
+    max-width: 60rem;
+
+    .upload-file-dragger {
+        height: 80%;
+    }
+
+}
+
+.scan-button-container {
+    margin-top: 6rem;
+    text-align: end;
+}
